@@ -1,0 +1,278 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    color: white;
+}
+.header{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.header img{
+    height: 37px;
+    width: 145px;
+    padding-left: 56px;
+    padding-top: 28px;
+}
+
+.header a{
+    align-self: flex-start;
+    padding: 10px 18px;
+    border-radius: 4px;
+    margin-right: 56px;
+    margin-top: 28px;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(244, 6, 18);
+    font-size: 16px;
+}
+
+.principal{
+    height: 649px;
+    background-image: url(imagens/bgnetflix.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+.principal h1{
+    text-align: center;
+    font-size: 3.125em;
+    max-width: 670px;
+    margin-bottom: 34px;
+}
+
+.container{
+    max-width: 1130px;
+    margin: 0 auto;
+}
+
+.gradiente{
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+}
+
+.branch-principal{
+    z-index: 1;
+}
+
+main span{
+    font-size: 26px;
+}
+
+main p{
+    font-size: 19px;
+    margin-top: 38px;
+}
+
+.forms-cta{
+    display: grid;
+    grid-template-columns: 451px 182px;
+    margin-top: 22px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+}
+
+.forms-cta input{
+    padding: 20px 10px;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.forms-cta button{
+    background-color: rgb(244, 6, 18);
+    outline: none;
+    color: white;
+    font-family: Helvetica;
+    border: none;
+    font-style: normal;
+    font-size: 26px;
+}
+
+.section{
+    background-color: black;
+    color: white;
+    padding: 1.4rem 0;
+    border-top: 8px solid #222;
+}
+
+.img-tv{
+    position: relative;
+    
+}
+
+.video-tv{
+    position: absolute;
+    top: 99px;
+    left: 70px;
+    margin-left: 15px;
+    width: 465px;
+
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    align-items: center;
+}
+
+
+.section h1{
+    font-size: 50px;
+    margin-bottom: 39px;
+}
+
+.section p{
+    font-size: 26px;
+}
+
+
+
+.baixe .img-tv{
+    order: 1;
+}
+
+.baixe .grid > div:first-child  {
+    order: 2;
+}
+
+
+.device .video-tv{
+    width: 340px;
+    bottom: 150px;
+}
+
+.justinST{
+    width: 340px;
+}
+
+.crianca .grid div:first-child{
+    order: 2;
+}
+
+.crianca{
+    border-top: 8px solid #222 ;
+}
+
+.fim-texto{
+    border-top: 8px solid #222;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: sans-serif;
+    padding-top: 77px;
+    padding-bottom: 50px;
+}
+
+.pergunta .resposta{
+    background: #303030;
+}
+
+.pergunta{
+    padding: 20px 30px  ;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding-top: 8px;
+    margin-bottom: 1px;
+    font-size: 26px;
+    padding-top: 20px;
+    
+}
+
+.resposta{
+    padding-left: 34px;
+    font-size: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s cubic-bezier (0.5, 0, 0.1, 1);
+}
+
+.pergunta::after{
+    content: " ";
+    display: block;
+    height: 20px;
+    width: 20px;
+    background-image: url(../netflix/imagens/fechar.png) no-repeat center center;
+    transform: rotate(45deg);
+
+}
+
+hr{
+    width: 100;
+    border-color: #303030;
+    height: 1px;
+
+}
+
+.pergunta > div{
+    padding: 30px;
+    
+}
+
+.caixote{
+    background-color: #303030;
+    max-width: 815px;
+    margin: auto;
+}
+
+.botfec{
+    height: 20px;
+    width: 20px;
+    
+}
+
+#bot1{
+    padding-left: 600px;
+}
+
+#bot2{
+    padding-left: 520px;
+}
+
+#bot3{
+    padding-left: 520px;
+}
+
+#bot4{
+    padding-left: 520px;
+}
+
+#bot5{
+    margin-left: 500px;
+}
+
+
+.faq-list{
+    color: white;
+    margin-bottom: 1px;
+
+}
+
+.fundo{
+    background-color: black;
+}
+
+.resposta .active{
+    max-height: 1200px;
+}
+
+pergunta.active::after{
+    transform: rotate(0deg);
+}
